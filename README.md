@@ -6,4 +6,5 @@
 [-] 缺少alpha，组成分析情况  
 
 ### PRJDB4176
-33下载中
+33下载中  
+https://www.ebi.ac.uk/ena/browser/view/PRJDB4176?show=publications  
