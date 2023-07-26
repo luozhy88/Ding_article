@@ -16,5 +16,12 @@ https://www.ebi.ac.uk/ena/browser/view/PRJDB4176?show=publications
 https://github.com/luozhy88/Analysis_shotgun_PRJDB4176  
 
 #### ML
-https://github.com/luozhy88/Analysis_shotgun_PRJDB4176/blob/main/03_ML/shotgun/atlas_binning/PRJDB4176_binning_different.models.scores.csv   
-https://github.com/luozhy88/Analysis_shotgun_PRJDB4176/blob/main/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_Roc_plot.pdf  
+##### atlas_binning
+
+https://github.com/luozhy88/Analysis_shotgun_PRJDB4176/blob/main/03_ML/shotgun/atlas_binning/PRJDB4176_binning_different.models.scores.csv  
+https://github.com/luozhy88/Analysis_shotgun_PRJDB4176/blob/main/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_Roc_plot.pdf 
+
+##### krakens
+
+https://github.com/luozhy88/Analysis_shotgun_PRJDB4176/blob/main/03_ML/shotgun/krakens/ERP012177_different.models.scores.csv  
+https://github.com/luozhy88/Analysis_shotgun_PRJDB4176/blob/main/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.pdf  
