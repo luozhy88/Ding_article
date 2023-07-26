@@ -7,8 +7,12 @@
 
 https://github.com/luozhy88/Analysis_shotgun_ERP012177  
 #### ML
-https://github.com/luozhy88/Analysis_shotgun_ERP012177/blob/main/03_ML/shotgun/ERP012177_different.models.scores.csv   
-https://github.com/luozhy88/Analysis_shotgun_ERP012177/blob/main/03_ML/shotgun/ERP012177_best.model_draw_Roc_plot.pdf  
+##### atlas_binning
+https://github.com/luozhy88/Analysis_shotgun_ERP012177/blob/main/03_ML/shotgun/atlas_binning/ERP012177_binning_different.models.scores.csv  
+https://github.com/luozhy88/Analysis_shotgun_ERP012177/blob/main/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_Roc_plot.pdf 
+##### krakens
+https://github.com/luozhy88/Analysis_shotgun_ERP012177/blob/main/03_ML/shotgun/krakens/ERP012177_different.models.scores.csv  
+https://github.com/luozhy88/Analysis_shotgun_ERP012177/blob/main/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.pdf  
 
 ### PRJDB4176
 33下载中  
@@ -17,11 +21,7 @@ https://github.com/luozhy88/Analysis_shotgun_PRJDB4176
 
 #### ML
 ##### atlas_binning
-
 https://github.com/luozhy88/Analysis_shotgun_PRJDB4176/blob/main/03_ML/shotgun/atlas_binning/PRJDB4176_binning_different.models.scores.csv  
 https://github.com/luozhy88/Analysis_shotgun_PRJDB4176/blob/main/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_Roc_plot.pdf 
 
 ##### krakens
-
-https://github.com/luozhy88/Analysis_shotgun_PRJDB4176/blob/main/03_ML/shotgun/krakens/ERP012177_different.models.scores.csv  
-https://github.com/luozhy88/Analysis_shotgun_PRJDB4176/blob/main/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.pdf  
