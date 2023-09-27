@@ -1,0 +1,82 @@
+---
+Title: Report
+author: "YNYK"
+date: "`r Sys.Date()`"
+output: 
+  pdf_document: 
+    keep_tex: yes
+    latex_engine: xelatex
+    toc_depth: 4
+header-includes:
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyhead[CO]{YNYK}
+---
+
+
+# Figure1 Overall
+
+# Figure2 ML
+
+## ERP012177
+
+### ROC
+
+![ERP012177 atlas binning](../../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_Roc_plot.pdf){width=50% height=50%}
+![ERP012177 krakens](../../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.pdf){width=50% height=50%}
+
+
+<div style="display: flex; flex-direction: row;">
+  <iframe src="../../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_Roc_plot.pdf" width="50%" height="500px"></iframe>
+  <iframe src="../../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.pdf" width="50%" height="500px"></iframe>
+</div>
+
+图1:ERP012177 atlas binning.                                          图2: ERP012177 krakens
+
+### Feature_importance
+
+![ERP012177 atlas binning](../../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_feature_importance_plot.pdf){width=50% height=50%}
+![ERP012177 krakens](../../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_feature_importance_plot.pdf){width=50% height=50%}
+
+<div style="display: flex; flex-direction: row;">
+  <iframe src="../../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_feature_importance_plot.pdf" width="50%" height="500px"></iframe>
+  <iframe src="../../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_feature_importance_plot.pdf" width="50%" height="500px"></iframe>
+</div>
+
+图1:ERP012177 atlas binning.                                          图2: ERP012177 krakens
+
+
+
+## PRJDB4176
+
+### ROC
+
+![PRJDB4176 atlas binning](../../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_Roc_plot.pdf){width=50% height=50%}
+![PRJDB4176 krakens](../../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_Roc_plot.pdf){width=50% height=50%}
+
+
+<div style="display: flex; flex-direction: row;">
+  <iframe src="./../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_Roc_plot.pdf" width="50%" height="500px"></iframe>
+    <iframe src="../../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.pdf" width="50%" height="500px"></iframe>
+</div>
+
+
+### Feature_importance
+
+![PRJDB4176 atlas binning](../../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_feature_importance_plot.pdf){width=50% height=50%}
+![PRJDB4176 krakens](../../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_feature_importance_plot.pdf){width=50% height=50%}
+
+
+<div style="display: flex; flex-direction: row;">
+  <iframe src="./../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_feature_importance_plot.pdf" width="50%" height="500px"></iframe>
+    <iframe src="../../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_feature_importance_plot.pdf" width="50%" height="500px"></iframe>
+</div>
+
+
+
+
+
+
+
+
+
