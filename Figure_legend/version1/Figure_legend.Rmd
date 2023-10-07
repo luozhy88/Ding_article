@@ -13,6 +13,13 @@ header-includes:
 - \fancyhead[CO]{YNYK}
 ---
 
+\fontsize{18}{12}\selectfont  
+
+
+```{r include=FALSE}
+library(magick)
+library(cowplot)
+```
 
 
 # Background
@@ -44,26 +51,56 @@ In summary, this study compared the microbiomes of two datasets through assembly
 
 ### ROC
 
-![ERP012177 atlas binning](../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_Roc_plot.pdf){width=50% height=50%}
-![ERP012177 krakens](../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.pdf){width=50% height=50%}
+
+
+
+```{r include=FALSE}
+file.name="../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_Roc_plot.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "A", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
+
+file.name="../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "B", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
+
+```
+
+
+![ERP012177 atlas binning](../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_Roc_plot.png){width=50% height=50%}
+![ERP012177 krakens](../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.png){width=50% height=50%}
 
 
 
 <div style="display: flex; flex-direction: row;">
-  <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_Roc_plot.pdf" width="50%" height="500px"></iframe>
-  <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.pdf" width="50%" height="500px"></iframe>
+  <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_Roc_plot.png" width="50%" height="500px"></iframe>
+  <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.png" width="50%" height="500px"></iframe>
 </div>
 
 图1:ERP012177 atlas binning.                                          图2: ERP012177 krakens
 
 ### Feature_importance
 
-![ERP012177 atlas binning](../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_feature_importance_plot.pdf){width=50% height=50%}
-![ERP012177 krakens](../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_feature_importance_plot.pdf){width=50% height=50%}
+```{r include=FALSE}
+file.name="../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_feature_importance_plot.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "A", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
+
+file.name="../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_feature_importance_plot.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "B", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
+
+```
+
+![ERP012177 atlas binning](../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_feature_importance_plot.png){width=50% height=50%}
+![ERP012177 krakens](../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_feature_importance_plot.png){width=50% height=50%}
 
 <div style="display: flex; flex-direction: row;">
-  <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_feature_importance_plot.pdf" width="50%" height="500px"></iframe>
-  <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_feature_importance_plot.pdf" width="50%" height="500px"></iframe>
+  <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/atlas_binning/ERP012177_binning_best.model_draw_feature_importance_plot.png" width="50%" height="500px"></iframe>
+  <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_feature_importance_plot.png" width="50%" height="500px"></iframe>
 </div>
 
 图1:ERP012177 atlas binning.                                          图2: ERP012177 krakens
@@ -73,67 +110,128 @@ In summary, this study compared the microbiomes of two datasets through assembly
 ## PRJDB4176
 
 ### ROC
+```{r include=FALSE}
+file.name="../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_Roc_plot.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "A", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
 
-![PRJDB4176 atlas binning](../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_Roc_plot.pdf){width=50% height=50%}
-![PRJDB4176 krakens](../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_Roc_plot.pdf){width=50% height=50%}
+file.name="../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_Roc_plot.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "B", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
+
+```
+
+![PRJDB4176 atlas binning](../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_Roc_plot.png){width=50% height=50%}
+![PRJDB4176 krakens](../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_Roc_plot.png){width=50% height=50%}
 
 
 <div style="display: flex; flex-direction: row;">
-  <iframe src="./../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_Roc_plot.pdf" width="50%" height="500px"></iframe>
-    <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.pdf" width="50%" height="500px"></iframe>
+  <iframe src="./../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_Roc_plot.png" width="50%" height="500px"></iframe>
+    <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/ERP012177_best.model_draw_Roc_plot.png" width="50%" height="500px"></iframe>
 </div>
 
 
 ### Feature_importance
+```{r include=FALSE}
+file.name="../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_feature_importance_plot.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "A", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
 
-![PRJDB4176 atlas binning](../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_feature_importance_plot.pdf){width=50% height=50%}
-![PRJDB4176 krakens](../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_feature_importance_plot.pdf){width=50% height=50%}
+file.name="../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_feature_importance_plot.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "B", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
+
+```
+
+![PRJDB4176 atlas binning](../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_feature_importance_plot.png){width=50% height=50%}
+![PRJDB4176 krakens](../../Analysis_shotgun_PRJDB4176/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_feature_importance_plot.png){width=50% height=50%}
 
 
 <div style="display: flex; flex-direction: row;">
-  <iframe src="./../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_feature_importance_plot.pdf" width="50%" height="500px"></iframe>
-    <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_feature_importance_plot.pdf" width="50%" height="500px"></iframe>
+  <iframe src="./../Analysis_shotgun_PRJDB4176/03_ML/shotgun/atlas_binning/PRJDB4176_binning_best.model_draw_feature_importance_plot.png" width="50%" height="500px"></iframe>
+    <iframe src="../../Analysis_shotgun_ERP012177/03_ML/shotgun/krakens/PRJDB4176_best.model_draw_feature_importance_plot.png" width="50%" height="500px"></iframe>
 </div>
 
 # Figure3 Wilcoxon
 
 ## ERP012177
 
-![ERP012177 atlas binning](../../Analysis_shotgun_ERP012177/04_Wilcoxon/atlas/output/class_ERP012177_pvalue0.05case_control_metagenomics.pdf){width=50% height=50%}
-![ERP012177 krakens](../../Analysis_shotgun_ERP012177/04_Wilcoxon/Kraken2/output/class_ERP012177_pvalue0.05case_control_metagenomics.pdf){width=50% height=50%}
+```{r include=FALSE}
+file.name="../../Analysis_shotgun_ERP012177/04_Wilcoxon/atlas/output/class_ERP012177_pvalue0.05case_control_metagenomics.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "A", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
+
+file.name="../../Analysis_shotgun_ERP012177/04_Wilcoxon/Kraken2/output/class_ERP012177_pvalue0.05case_control_metagenomics.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "B", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
+
+```
+
+
+![ERP012177 atlas binning](../../Analysis_shotgun_ERP012177/04_Wilcoxon/atlas/output/class_ERP012177_pvalue0.05case_control_metagenomics.png){width=50% height=50%}
+![ERP012177 krakens](../../Analysis_shotgun_ERP012177/04_Wilcoxon/Kraken2/output/class_ERP012177_pvalue0.05case_control_metagenomics.png){width=50% height=50%}
 
 
 
 <div style="display: flex; flex-direction: row;">
-  <iframe src="../../Analysis_shotgun_ERP012177/04_Wilcoxon/atlas/output/class_ERP012177_pvalue0.05case_control_metagenomics.pdf" width="50%" height="500px"></iframe>
-  <iframe src="../../Analysis_shotgun_ERP012177/04_Wilcoxon/Kraken2/output/class_ERP012177_pvalue0.05case_control_metagenomics.pdf" width="50%" height="500px"></iframe>
+  <iframe src="../../Analysis_shotgun_ERP012177/04_Wilcoxon/atlas/output/class_ERP012177_pvalue0.05case_control_metagenomics.png" width="50%" height="500px"></iframe>
+  <iframe src="../../Analysis_shotgun_ERP012177/04_Wilcoxon/Kraken2/output/class_ERP012177_pvalue0.05case_control_metagenomics.png" width="50%" height="500px"></iframe>
 </div>
 
 
 ## PRJDB4176
 
+```{r include=FALSE}
+file.name="../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/atlas/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "A", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
 
-![PRJDB4176 atlas binning](../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/atlas/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.pdf){width=50% height=50%}
-![PRJDB4176 krakens](../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/Kraken2/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.pdf){width=50% height=50%}
+file.name="../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/Kraken2/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "B", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
+
+```
+![PRJDB4176 atlas binning](../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/atlas/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.png){width=50% height=50%}
+![PRJDB4176 krakens](../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/Kraken2/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.png){width=50% height=50%}
 
 
 <div style="display: flex; flex-direction: row;">
-  <iframe src="../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/atlas/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.pdf" width="50%" height="500px"></iframe>
-    <iframe src="../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/Kraken2/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.pdf" width="50%" height="500px"></iframe>
+  <iframe src="../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/atlas/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.png" width="50%" height="500px"></iframe>
+    <iframe src="../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/Kraken2/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.png" width="50%" height="500px"></iframe>
 </div>
 
 
 # Figure4 Venny
+```{r include=FALSE}
+file.name="../../Venny/Atlas_wilcox_venny.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "A", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
 
-![Atlas atlas binning](../../Venny/Atlas_wilcox_venny.pdf){width=50% height=50%}
-![Kraken2 krakens](../../Venny/Kraken2_wilcox_venny.pdf){width=50% height=50%}
+file.name="../../Venny/Kraken2_wilcox_venny.pdf"
+IMAGE=image_read_pdf(file.name) %>% #image_read
+image_annotate( "B", size = 30, gravity = "northwest", color = "black")
+image_write(IMAGE,format = "png",path = gsub("pdf","png",file.name) )
+
+```
+
+![Atlas atlas binning](../../Venny/Atlas_wilcox_venny.png){width=50% height=50%}
+![Kraken2 krakens](../../Venny/Kraken2_wilcox_venny.png){width=50% height=50%}
+
 
 
 <div style="display: flex; flex-direction: row;">
-  <iframe src="../../Venny/Atlas_wilcox_venny.pdf" width="50%" height="500px"></iframe>
-    <iframe src="../../Venny/Kraken2_wilcox_venny.pdf" width="50%" height="500px"></iframe>
+  <iframe src="../../Venny/Atlas_wilcox_venny.png" width="50%" height="500px"></iframe>
+    <iframe src="../../Venny/Kraken2_wilcox_venny.png" width="50%" height="500px"></iframe>
 </div>
-
 
 
 References:
