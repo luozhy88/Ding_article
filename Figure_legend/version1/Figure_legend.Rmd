@@ -100,3 +100,15 @@ header-includes:
     <iframe src="../../Analysis_shotgun_PRJDB4176/04_Wilcoxon/Kraken2/output/class_PRJDB4176_pvalue0.05Stage.III.IV._Healthy.control_metagenomics.pdf" width="50%" height="500px"></iframe>
 </div>
 
+
+# Figure4 Venny
+
+![Atlas atlas binning](../../Venny/Atlas_wilcox_venny.pdf){width=50% height=50%}
+![Kraken2 krakens](../../Venny/Kraken2_wilcox_venny.pdf){width=50% height=50%}
+
+
+<div style="display: flex; flex-direction: row;">
+  <iframe src="../../Venny/Atlas_wilcox_venny.pdf" width="50%" height="500px"></iframe>
+    <iframe src="../../Venny/Kraken2_wilcox_venny.pdf" width="50%" height="500px"></iframe>
+</div>
+
