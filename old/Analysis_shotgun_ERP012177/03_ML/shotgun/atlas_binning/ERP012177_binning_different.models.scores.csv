@@ -1,0 +1,13 @@
+"no.","name","engine","tuning","accuracy","auc","f1"
+6,"ranger_RS_3","ranger","random_search",0.833333333333333,0.730769230769231,0.793939393939394
+1,"ranger_model","ranger","basic",0.777777777777778,0.769230769230769,0.787878787878788
+2,"xgboost_model","xgboost","basic",0.714285714285714,0.692307692307692,0.709090909090909
+5,"ranger_RS_2","ranger","random_search",0.714285714285714,0.692307692307692,0.775757575757576
+4,"ranger_RS_1","ranger","random_search",0.666666666666667,0.692307692307692,0.806060606060606
+7,"xgboost_RS_1","xgboost","random_search",0.625,0.653846153846154,0.706060606060606
+9,"xgboost_RS_3","xgboost","random_search",0.625,0.653846153846154,0.706060606060606
+8,"xgboost_RS_2","xgboost","random_search",0.571428571428571,0.615384615384615,0.66969696969697
+3,"decision_tree_model","decision_tree","basic",NA,0.576923076923077,0.5
+10,"decision_tree_RS_1","decision_tree","random_search",NA,0.576923076923077,0.5
+11,"decision_tree_RS_2","decision_tree","random_search",NA,0.576923076923077,0.5
+12,"decision_tree_RS_3","decision_tree","random_search",NA,0.576923076923077,0.5

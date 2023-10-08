@@ -1,0 +1,6 @@
+Jul-26 17:17:12.273 [main] DEBUG nextflow.cli.Launcher - $> /home/zhiyu/data/script/shotgun/nextflow-23.04.1-all run
+Jul-26 17:17:12.338 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: No project name was specified
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:288)
+	at nextflow.cli.Launcher.run(Launcher.groovy:494)
+	at nextflow.cli.Launcher.main(Launcher.groovy:653)
